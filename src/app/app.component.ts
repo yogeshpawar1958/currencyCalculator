@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CurrencyDataService } from './currency-data.service';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import  { faLeftRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,7 @@ export class AppComponent {
   amount=1;
 fromImg="https://countryflagsapi.com/png/us/"
 toImg="https://countryflagsapi.com/png/us/"
-
+faCoffee=faLeftRight;
   constructor(private http:CurrencyDataService){
 
    

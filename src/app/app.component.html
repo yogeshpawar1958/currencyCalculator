@@ -1,6 +1,6 @@
 <div class="outer">
   <div class="main-container shadow-lg">
-    <h1>Exchange Rate</h1>
+    <h5 class="font-weight-light">Exchange Rate</h5>
     <div class="result-container d-flex justify-content-between
       align-items-center">
 
@@ -14,13 +14,13 @@
       <input type="text" [(ngModel)]="amount" />
     </div>
 
-    
+    <!-- <FontAwesomeIcon icon="fa-solid fa-arrow-right-arrow-left" /> -->
 
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-sm-4 m-2">
         <strong>From</strong><br>
-        <span class="row border">
-          <img class="col-4" src="{{fromImg}}" style="height: 25px;
+        <span class="inner border">
+          <img class="col-3" src="{{fromImg}}" style="height: 25px;
             width: 25px; padding: 2px; " alt="">
           <select class="col-7 mx-2" #from (change)="fromCountry(from.value)">
            
@@ -30,11 +30,11 @@
           </select>
         </span>
       </div>
-      <div class="col-sm-1 mx-2 mt-3">==></div>
+      <div class="col-sm-1 mx-2 mt-3"><fa-icon [icon]="faCoffee" size="2x"></fa-icon>
+      </div>
       <div class="col-sm-4 mx-2 my-2 ">
         <strong>To</strong><br>
-        <span class="border row d-flex justify-content-center">
-          
+        <span class="inner border">
           <img class="col-4" src="{{toImg}}" style="height: 25px;
             width: 25px; padding: 2px;" alt="">
 
@@ -45,9 +45,9 @@
         </span>
       </div>
     </div>
-    <div class="d-flex align-item-center justify-content-center">
-      <button class="btn btn-primary mt-5"(click)="convert()">Convert</button>
-    </div>
+   
+      <button class="btn btn-primary mt-5 w-75 text-white text-capitalize font-weight-bold "(click)="convert()">Convert</button>
+   
 
   </div>
 </div>

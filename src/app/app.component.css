@@ -42,15 +42,28 @@ select:focus{
     outline: none;
 }
 button{
-    width: 140px;
-    color:white
+    width: 350px;
+    color:white;
+    font-size: large;  
+    
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    /* border: 1px soild black; */
+    /* border:1pc solid black; */
+    height: 40px;
 }
 button:hover{
-    background-color: white;
+    background-color: rgb(45, 139, 130);
     cursor: pointer;
     color: black;
     
 }
+
 
 .selection-container{
     display: flex;
