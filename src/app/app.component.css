@@ -1,0 +1,68 @@
+* Poppins Google font link */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    border:2px solid black;
+
+}
+select{
+
+    font-size: 15px;
+    /* padding: 5px; */
+    border-radius: 10px;
+    border:none;
+    /* height: 40px; */
+    /* width: 100px; */
+    
+    background: rgba(252, 251, 251, 0.996);
+}
+select:focus{
+    outline: none;
+}
+button{
+    width: 140px;
+    color:white
+}
+button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    
+}
+
+.selection-container{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items:center;
+    justify-content:space-around;
+}
+input{
+    border-radius: 10px;
+    height: 40px;
+    
+    text-align: center;
+    font-size: 21px;
+}
